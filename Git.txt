@@ -1,0 +1,314 @@
+GIT 
+
+https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
+https://devhints.io/git-log
+
+- Repositorio Local
+
+- cd <nome da pasta>
+- ls ->verifica oq tem dentro da pasta
+- cd .. -> Sobe uma pasta (Volta)
+- cd ../<nome da pasta> ->Volta e vai para a pasta selecionada
+- mkdir <nome da pasta> -> Cria uma pasta
+
+
+comando no repositrio 
+	- git init (iniciar um git em uma pasta nova)
+	- ls -la (listar todos os arquivos que estao na apsta ate mesmo ocultos)
+	- git status (status atual do repositorio)
+	- git add "nome do arquivo.txt(ou outro formato)"(comita os arquivos novos)
+	- git add . (comita tudo)
+	- git commit -m "uma frase"
+	- git status
+	- git log (verifica todos os gits feitos)
+	- git log --oneline -> Log resumido
+	- git log -p -> Log com mais informações
+	- git show <hash do commit> = verifica todas as commits feitas
+	- git diff <nome do arquivo.txt>
+	- git diff <hash primeiro commit>..<hash do ultimo commit que vc quer ver a alteração>
+	- git diff --cached -> Para visualizar as diferenças entre o staging area e o repositório
+	- git diff HEAD -> Para verificar o que está no working tree e no stage com o que está no repositório
+	- git blame <nome do arquivo> = quem alterou
+	- git remote add origin <link https>
+	- git remote -v = ferifica quantos remotes tem
+	- git remote remove <nome> = remove o repositorio
+	- git push origin master = Vai pedir o loguin e senha do bithub Joaogui2309
+	- git pull origin master = Vai puxar as auterações do GITHub
+	- git clone <url> = Clonar os arquivos da nuvem em outra pasta
+	- git config -l
+	- cd <pasta> = ir para repositorio local
+	-.gitignore -> dentro no arquivo colocar o nome dos arquivos que quer que o git ignore	
+	**- git init --bare -> Repositório puro, so contem as alterações
+	- git remote rename <nome atual> <novo nome>
+	- git checkout -- <nome do arquivo> -> desfaz a mudança
+	- git reset HEAD <nome do arquivo> -> volta um add
+	- git rever <hash do commit> -> desfaz um commit
+	- git stash -> salva os arquivos temporariamente, sem fazer um commit e um log
+	- git stash list -> lista de stash salvos
+	- git stash pop -> tira da stash a ultima alteração e remove o stash
+	- git checkout <hash do commit> -> Voltar um commit
+	- git tag -a <nome da versao> -m "Menssagem da tag"-> Marcar um checkpoint, marca uma versão, fazer uma TAG
+	- git tag -> mostra as tags diponiveis
+	- git push origin <nome da tag> -> enviar uma tag para um repositório
+	- 
+
+	*Configurar o primeiro Git
+		- git config user.name "Nome"
+		- git config user.email "seu e-mail"
+		- git config --global
+
+- BRANCHES
+	- git branch novobranch -> A criação de um branch é simples utilizando o comando "git branch" e adicionando o nome do branch.
+	- git checkout -b <nome novo branch> -> Cria e ja muda para o novo branch
+	- git branch -m master <nome novo>
+	- git branch -> O segundo comando "git branch" sem nenhum parâmetro tem como saída o nome de todos os branches locais do repositório.
+	- git checkout novobranch -> Agora que o branch foi criado é necessário baixar os arquivos do branch e realizar as alterações necessárias. Para isso deve-se realizar um check out no branch.
+	- git merge <branch que quer juntar> -> Confirmar :x + enter
+	- git rebase <branch atualiza no branch que quer pegar>
+
+	-Existem basicamente três situações quando se deve criar um novo branch:
+		-Alterações Experimentais: Quando for preciso tentar reescrever um algoritmo para torná-lo mais rápido ou tentar refatorar uma parte do código para algum padrão pode-se criar um novo branch. 
+		 Assim, é possível trabalhar nessa parte separadamente sem afetar o restante que já está funcional e pronta para deploy;
+		-Novas funcionalidades: Sempre que é necessário trabalhar em uma nova funcionalidade pode-se criar um novo branch. Quando finalizar a implementação da funcionalidade basta fazer um merge com o branch de release da versão;
+		-Correção de Bugs: Quando surgirem bugs a serem corrigidos no código que ainda não foi lançado ou em uma versão que já foi taggeada e lançada cria-se um branch para realizar a correção do bug. 
+		 Isso garante uma maior flexibilidade aos desenvolvedores para trabalharem no erro. Após a correção pode-se realizar um merge.
+
+	-Agora é necessário também fazer os merges necessários. Para isso existem diferentes formas:
+		-Straight merges: Este tipo pega o histórico de um branch e mescla com o histórico de outro. Este tipo de merge é utilizado quando se realiza um pull, 
+		 e para exemplificar este caso basta criar um novo arquivo e realizar um add e commit no repositório.
+		-Ao realizar esse commit em um branch pode-se verificar que ele ainda não existe no branch master. Para isso, basta realizar um merge entre os dois. Primeiramente, 
+		 é preciso trocar para o branch que receberá as alterações realizadas em um outro. Nesse caso, é preciso ir para o branch master: git checkout master
+		-Agora basta usar o "git merge" com o nome do branch que será mesclado com o branch atual (master). git marge <alternate>
+		-Dessa forma, as alterações do branch alternate foram mescladas com o branch master.
+
+- 
+
+
+GITHub
+	- Ropositorios
+	- New
+
+
+#####################################################################################################################################
+DontPad
+
+maiko.cunha@db1.com.br
+https://appear.in/db1
+https://git-scm.com/
+
+Versionamento
+
+- Manter histórico de alterações
+- Manter equipes de  desenvolvimento sincronizadas
+- Permite trabalhar offline e depois enviar para um repositório remoto
+
+
+GIT
+GitHUB
+GitLab
+Gitbucket
+
+
+Como trabalhar com GIT
+
+
+Pasta
+
+Comandos
+
+git init -> inicializar um
+
+git status -> status atual do repositório
+
+git add ->  para promover meu arquivo para um commit
+
+git config user.name "Maiko Cunha" -> configurar nome usuário
+
+git config user.email "maiko.cunha@db1.com.br" -> configurar e-mail do usuário
+
+git commit -m "Arquivo criado aula 1 de git" -> executar um commit
+
+git log -> mostra os logs de  commit
+
+git show <hash do commit>
+
+git diff <nome do arquivo>
+
+git blame <nome do arquivo> ->  mostra que criou/alterou cada linha
+
+git remote add origin <link>
+
+git push origin master
+
+git pull origin master <url>
+
+Boa práticas
+
+- fazer commits pequenos
+- Mensagens claras e objetiva
+
+
+Exercícios:
+
+
+## Exercícios
+
+1) Crie um repositório Git local chamado exercício 1, crie um arquivo chamado "status.txt" e neste arquivo adicione o status atual de seu repositório.
+2) Execute o commit das alterações on arquivo "status.txt" e crie um arquivo chamado "logs.txt" contendo todos os logs de seu repositório local.
+3) Adicione no arquivo "status.txt" o status atual de seu repositório local e na sequência execute o commit de todos os arquivos alterados.
+4) Envie seu repositório local para o Github
+5) Crie um arquivo chamado "README.md" dentro de seu repositório na nuvem e descreva neste arquivo o conteúdo do seu repositório e os comandos necessários para alguém clonar seu repositório. Sobre arquivo README.md leia o artigo "https://www.embarcados.com.br/o-que-escrever-num-readme/" e para escrever o conteúdo utilize o guia "https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown"
+6) Atualize seu repositório local com o repositório remoto e adicione no arquivo "logs.txt" os novos logs de seu projeto e envie para a nuvem.
+
+-Alura-
+
+Chegou a hora de você pôr em prática o que foi visto na aula. Para isso, execute os passos listados abaixo.
+
+1) Execute o comando git branch e veja que apenas a branch master existe no seu repositório;
+
+2) Execute o comando git branch titulo e logo após execute o comando git branch. Veja que uma nova branch foi criada;
+
+3) Agora, para começar a trabalhar nesta branch, digite git checkout titulo;
+
+4) Execute novamente git branch e confira que agora você está na branch chamado titulo;
+
+5) Altere o título da página index.html para "Cursos de DevOps da Alura";
+
+6) Adicione as alterações com git add index.html;
+
+7) Faça o commit, com git commit -m "Alterando título da página";
+
+8) Execute o comando git log e confira o novo commit;
+
+9) Altere o título da página para "Lista de cursos de DevOps da Alura";
+
+10) Repita os passos 6 e 7, para adicionar um novo commit, alterando a mensagem;
+
+11) Repita o passo 8 para conferir o novo commit;
+
+12) Execute o comando git checkout master para voltar à linha de desenvolvimento master;
+
+13) Execute git log para conferir que os últimos dois commits não estão lá. Confira se o conteúdo do seu arquivo também voltou ao seu estado original;
+
+14) Na pasta criada para representar o trabalho de outra pessoa na aula anterior:
+
+Execute git checkout -b lista para criar uma nova branch, chamada lista e passar a trabalhar nela;
+Adicione o curso de "Kubernetes" na lista;
+Repita os passos 6 e 7 para adicionar um novo commit, alterando a mensagem;
+Execute o comando git checkout master para voltar à linha de desenvolvimento master;
+15) Volte para a pasta que representa o seu próprio trabalho;
+
+16) Altere o nome do curso de Docker para "Docker: Criando containers sem dor de cabeça";
+
+17) Repita os passos 6 e 7 para adicionar um novo commit, alterando a mensagem;
+
+18) Execute o comando git merge titulo para trazer o trabalho feito na branch titulo para a branch master;
+
+19) Execute o comando git log --graph para ver as linhas de desenvolvimento (branches);
+
+20) Execute git checkout titulo para trabalhar na branch chamada titulo;
+
+21) Altere o título para ter a palavra "Cursos" com letra maiúscula;
+
+22) Repita os passos 6 e 7 para adicionar um novo commit, alterando a mensagem;
+
+23) Execute o comando git checkout master para voltar à linha de desenvolvimento master;
+
+24) Execute o comando git rebase titulo;
+
+25) Execute o comando git log e confira que o commit foi adicionado antes do commit realizado diretamente na branch master;
+
+26) Execute o comando git push local master para enviar suas alterações para o repositório remoto que criamos na última aula;
+
+27) Na pasta criada para representar o trabalho de outra pessoa na aula anterior:
+
+Execute o comando git pull local master para baixar as alterações que você já realizou;
+Execute o comando git checkout lista para continuar trabalhando na lista de cursos;
+Altere o nome do curso de Docker para "Curso de Docker: Criando containers sem dor de cabeça";
+Repita os passos 6 e 7 para adicionar um novo commit, alterando a mensagem;
+Execute o comando git checkout master para voltar à linha de desenvolvimento master;
+Tente juntar seu trabalho com git merge lista;
+Veja que há conflitos. Corrija-os, deixando apenas a linha com o nome correto do curso;
+Execute o comando git add index.html para informar que os conflitos neste arquivo foram corrigidos;
+Execute o comando git commit para que o Git finalize o merge;
+Execute o comando git push local master para enviar as suas alterações;
+28) Volte para a pasta que representa o seu próprio trabalho;
+
+29) Altere o nome do curso de Vagrant para "Vagrant: Gerenciando máquinas virtuais";
+
+30) Repita os passos 6 e 7 para adicionar um novo commit, alterando a mensagem;
+
+31) Tente executar o comando git push local master. Veja a falha;
+
+32) Execute o comando git pull local master para trazer as alterações da outra pessoa;
+
+33) Agora sim, execute o comando git push local master para enviar as alterações.
+
+
+Chegou a hora de você pôr em prática o que foi visto na aula. Para isso, execute os passos listados abaixo.
+
+1) Na pasta que representa o seu projeto, faça uma alteração qualquer no arquivo index.html;
+
+2) Execute o git status e veja que há uma alteração para adicionar;
+
+3) Execute o comando git checkout -- index.html. Confira se sua alteração foi desfeita;
+
+4) Novamente, faça alguma alteração no arquivo index.html;
+
+5) Execute o comando git add index.html;
+
+6) Execute o comando git reset HEAD index.html para trazer o arquivo index.html de volta para a HEAD do projeto (remover do stage, que é o que será enviado para o commit);
+
+7) Repita o passo 3;
+
+8) Faça mais uma vez alguma alteração no código;
+
+9) Execute o comando git add index.html e o comando git commit -m "Alterando o código" para realizar um commit;
+
+10) Execute o comando git log e copie o hash deste commit recém criado;
+
+11) Rode o comando git revert {hash}, substituindo {hash} pelo hash que você copiou anteriormente;
+
+12) Confira que suas alterações foram desfeitas;
+
+13) Mude o nome do curso de Ansible para "Ansible: Infraestrutura como código";
+
+14) Execute o comando git stash para salvar estas alterações na stash;
+
+15) Altere o nome do curso de Kubernetes para "Kubernetes: Introdução a orquestração de containers";
+
+16) Execute o comando git add index.html e o comando git commit -m "Alterando o nome do curso de Kubernetes" para realizar um commit;
+
+17) Execute o comando git stash pop para trazer a última alteração da stash;
+
+18) Execute o comando git add index.html e o comando git commit -m "Alterando o nome do curso de Ansible" para realizar um commit;
+
+19) Execute o comando git push local master para enviar todas as suas alterações;
+
+20) Execute o comando git log --oneline para ver os commits de forma resumida. Copie o hash do commit de merge com a branch lista;
+
+21) Execute o comando git checkout {hash} substituindo {hash} pelo hash que você copiou;
+
+22) Veja que diversas alterações não estão mais presentes;
+
+23) Execute git checkout master para voltar à linha principal de desenvolvimento.
+
+Chegou a hora de você pôr em prática o que foi visto na aula. Para isso, execute os passos listados abaixo.
+
+1) Execute o comando git log -p para ver, junto a cada commit, as alterações nele realizadas;
+
+2) Execute agora o comando git log --oneline;
+
+3) Execute o comando git diff {hash do commit de merge com lista}..{hash do último commit realizado};
+
+4) Execute alguma (pequena) alteração no index.html;
+
+5) Execute o comando git diff e veja esta alteração;
+
+6) Desfaça esta última alteração;
+
+7) Execute o comando git tag -a v0.1.0 para criar uma tag no seu código;
+
+8) Execute o comando git push origin v0.1.0 para enviar esta tag para o GitHub;
+
+9) Abra a página do repositório do GitHub que você criou e confira a aba de Releases.
