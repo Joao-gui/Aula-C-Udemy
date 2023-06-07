@@ -10,3 +10,8 @@ Seção 3
         - scanf (" ") -> Receber dados do usuário.
         - No scanf o d do %d representa um int.
         
+    Aula 10 - O Compilador:
+        - Pega o código em texo e compila para a linguagem de máquina, tornando execuável.
+        - como compilar um porgrama sem usar uma IDE:
+            - Abrir o terminal e digitar o comando gcc <nome do programa.c> -o <nome do programa executavel.exe>
+            - Para executar oo programa compilado .exe tem que abrir o terminal e digitar o comando (No linux ou MAC ./<nome dro programa .exe>) no Windows <nome do programa .exe> (Obs.: Por utilizar o GUIT Bash, os comandos do linux funcionam no Windows)

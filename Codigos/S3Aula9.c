@@ -23,7 +23,7 @@ int main()
     scanf("%d", &idade);
 
     // Imprimir a variável digitada
-    printf("A sua idade e %d", idade);
+    printf("A sua idade e %d\n", idade);  // O comando \n pula linha
 
     return 0;
 }
