@@ -15,3 +15,7 @@ Seção 3
         - como compilar um porgrama sem usar uma IDE:
             - Abrir o terminal e digitar o comando gcc <nome do programa.c> -o <nome do programa executavel.exe>
             - Para executar oo programa compilado .exe tem que abrir o terminal e digitar o comando (No linux ou MAC ./<nome dro programa .exe>) no Windows <nome do programa .exe> (Obs.: Por utilizar o GUIT Bash, os comandos do linux funcionam no Windows)
+
+    Aula 11 - A função main()
+        - Para ser considerado uma programa em C tem que ter a função main() na estrutura.
+        - É a função em que quando o programa compila e executa é função que se inicía.
