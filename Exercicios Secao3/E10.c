@@ -17,11 +17,11 @@ int main()
 {
     setlocale(LC_ALL, "Portuguese_Brazil");
 
-    double velocidadeKms, velocidadeMs;
+    double velocidadeKmh, velocidadeMs;
 
     printf("Digite a velocidade em Km/h: ");
-    scanf("%lf", &velocidadeKms);
-    velocidadeMs=velocidadeKms/3.6;
-    printf("A velocidade %.2lfkm/h em m/s é de %.2lfm/s.", velocidadeKms, velocidadeMs);
+    scanf("%lf", &velocidadeKmh);
+    velocidadeMs=velocidadeKmh/3.6;
+    printf("A velocidade %.2lfkm/h em m/s é de %.2lfm/s.", velocidadeKmh, velocidadeMs);
     return 0;
 }
