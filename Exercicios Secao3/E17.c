@@ -15,7 +15,7 @@ int main()
 {
     double polegadas, centimetros;
 
-    printf("Digite o calor do comprimento em centimetros: ");
+    printf("Digite o valor do comprimento em centimetros: ");
     scanf("%lf", &centimetros);
     polegadas=centimetros/2.54;
     printf("O valor de %.2lfcm em polegadas e de %.2lf polegadas.", centimetros,polegadas);
