@@ -20,8 +20,9 @@ int main()
     printf("Digite a altura do degrau: ");
     scanf("%f", &alturaDegrau);
     printf("Qual a altura que deseja alcançar: ");
-    scanf("%f", &alturaTotal);
+    scanf("%f%*c", &alturaTotal);
     quantidadeDegraus = alturaTotal/alturaDegrau;
-    printf("A quantidade de degraus para subir é de %.0f.\n", quantidadeDegraus);
+    printf("A quantidade de degraus para subir é de %.0f.", quantidadeDegraus);
+    getchar();
     return 0;
 }
