@@ -1,3 +1,12 @@
+Comandos e informações úteis para C (Linux)
+https://www.ime.usp.br/~pf/algoritmos/apend/compilation.html
+gcc -std=c99 -Wall ppp.c qqq.c -o xxx -lm   → Comando para compilar e debugar via terminal
+
+comando linux
+sudo apt install inxi
+inxi -FxZ
+
+
 Seção 3
     Aula 9 - Variáveis:
         - A entrada padrão de um computador é o telcado e a saída padrão é o monitor (Serial)
