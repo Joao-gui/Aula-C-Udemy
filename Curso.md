@@ -28,3 +28,7 @@ Seção 3
     Aula 11 - A função main()
         - Para ser considerado uma programa em C tem que ter a função main() na estrutura.
         - É a função em que quando o programa compila e executa é função que se inicía.
+
+Seção 4
+    Aula 15 - if, else, else if
+        -
