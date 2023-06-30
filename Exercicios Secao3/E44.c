@@ -11,7 +11,6 @@
 
 #include <stdio.h>
 #include <locale.h>
-#include <conio.h>
 
 int main()
 {
@@ -20,10 +19,9 @@ int main()
 
     printf("Digite a altura do degrau: ");
     scanf("%f", &alturaDegrau);
-    printf("Qualu a altura que deseja alcançar: ");
+    printf("Qual a altura que deseja alcanÃ§ar: ");
     scanf("%f", &alturaTotal);
     quantidadeDegraus = alturaTotal/alturaDegrau;
-    printf("A quantidade de degraus para subir é de %.0f.", quantidadeDegraus);
-    getch();
+    printf("A quantidade de degraus para subir Ã© de %.0f.\n", quantidadeDegraus);
     return 0;
 }
